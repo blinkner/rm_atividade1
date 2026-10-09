@@ -1,0 +1,476 @@
+header {
+  stamp {
+    sec: 202
+    nsec: 380000000
+  }
+}
+pose {
+  name: "ground_plane"
+  id: 4
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "caixa_trajetoria"
+  id: 8
+  position {
+    x: 1.35
+    z: 0.4
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "caixa_lateral"
+  id: 12
+  position {
+    x: 2.5
+    y: 1.5
+    z: 0.3
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "parede_fundo"
+  id: 16
+  position {
+    x: 4.5
+    z: 0.5
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "parede_esquerda"
+  id: 20
+  position {
+    x: 1.5
+    y: 3
+    z: 0.5
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "parede_direita"
+  id: 24
+  position {
+    x: 1.5
+    y: -3
+    z: 0.5
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "parede_atras"
+  id: 28
+  position {
+    x: -1.5
+    z: 0.5
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "rm_bot"
+  id: 34
+  position {
+    x: 2.8995563771239827
+    y: -0.035446090691290337
+    z: -2.5845513870512644e-07
+  }
+  orientation {
+    x: -2.1520549879578096e-06
+    y: -2.1322335463051047e-06
+    z: -0.24508049079430858
+    w: 0.9695027349228279
+  }
+}
+pose {
+  name: "link"
+  id: 5
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "body"
+  id: 9
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "body"
+  id: 13
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "body"
+  id: 17
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "body"
+  id: 21
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "body"
+  id: 25
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "body"
+  id: 29
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_footprint"
+  id: 35
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "left_wheel_link"
+  id: 64
+  position {
+    x: 0.00025005190352000994
+    y: 0.091799969068507181
+    z: 0.034461404721044718
+  }
+  orientation {
+    x: 4.0244395289879e-07
+    y: 0.44255745746513186
+    z: 1.986129520847868e-07
+    w: 0.89674015012254071
+  }
+}
+pose {
+  name: "right_wheel_link"
+  id: 67
+  position {
+    x: -0.00024995029183871864
+    y: -0.091800030568382818
+    z: 0.034460862325879749
+  }
+  orientation {
+    x: 3.0731147915297186e-07
+    y: -0.69777035754697714
+    z: -2.9935324730168134e-07
+    w: 0.71632152566328744
+  }
+}
+pose {
+  name: "visual"
+  id: 6
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 10
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 14
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 18
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 22
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 26
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 30
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "sunVisual"
+  id: 33
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_footprint_fixed_joint_lump__caster_spacer_3_visual"
+  id: 36
+  position {
+    x: 0.083805
+    y: -0.06025
+    z: 0.042805532
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_footprint_fixed_joint_lump__caster_spacer_7_visual_1"
+  id: 37
+  position {
+    x: 0.083805
+    y: 0.06025
+    z: 0.042805532
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_footprint_fixed_joint_lump__cad_part_0_visual_2"
+  id: 38
+  position {
+    z: 0.048611063
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_footprint_fixed_joint_lump__cad_part_1_visual_3"
+  id: 39
+  position {
+    z: 0.048611063
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_footprint_fixed_joint_lump__cad_part_10_visual_4"
+  id: 40
+  position {
+    z: 0.048611063
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_footprint_fixed_joint_lump__cad_part_12_visual_5"
+  id: 41
+  position {
+    z: 0.048611063
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_footprint_fixed_joint_lump__cad_part_13_visual_6"
+  id: 42
+  position {
+    z: 0.048611063
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_footprint_fixed_joint_lump__cad_part_14_visual_7"
+  id: 43
+  position {
+    z: 0.048611063
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_footprint_fixed_joint_lump__cad_part_15_visual_8"
+  id: 44
+  position {
+    z: 0.048611063
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_footprint_fixed_joint_lump__cad_part_16_visual_9"
+  id: 45
+  position {
+    z: 0.048611063
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_footprint_fixed_joint_lump__cad_part_2_visual_10"
+  id: 46
+  position {
+    z: 0.048611063
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_footprint_fixed_joint_lump__cad_part_3_visual_11"
+  id: 47
+  position {
+    z: 0.043000001
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_footprint_fixed_joint_lump__cad_part_4_visual_12"
+  id: 48
+  position {
+    z: 0.048611063
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_footprint_fixed_joint_lump__cad_part_5_visual_13"
+  id: 49
+  position {
+    z: 0.048611063
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_footprint_fixed_joint_lump__cad_part_6_visual_14"
+  id: 50
+  position {
+    z: 0.048611063
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_footprint_fixed_joint_lump__cad_part_7_visual_15"
+  id: 51
+  position {
+    z: 0.043000001
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_footprint_fixed_joint_lump__cad_part_8_visual_16"
+  id: 52
+  position {
+    z: 0.048611063
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "left_wheel_link_visual"
+  id: 65
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "right_wheel_link_visual"
+  id: 68
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "sun"
+  id: 32
+  position {
+    z: 10
+  }
+  orientation {
+    w: 1
+  }
+}
+

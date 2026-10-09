@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>rm_bot</name>
+  <version>0.1.0</version>
+  <description>Metapacote do robo diferencial didatico rm_bot.</description>
+  <maintainer email="professor@example.com">Equipe rm_bot</maintainer>
+  <license>Apache-2.0</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <exec_depend>rm_bot_description</exec_depend>
+  <exec_depend>rm_bot_sim</exec_depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

@@ -1,0 +1,110 @@
+Panels:
+- Class: rviz_common/Displays
+  Name: Displays
+  Property Tree Widget:
+    Expanded:
+    - /Global Options1
+    - /LiDAR1
+    Splitter Ratio: 0.5
+- Class: rviz_common/Views
+  Name: Views
+- Class: rviz_common/Tool Properties
+  Name: Tool Properties
+Visualization Manager:
+  Class: ''
+  Global Options:
+    Fixed Frame: odom
+  Displays:
+  - Class: rviz_default_plugins/Grid
+    Name: Grid
+    Enabled: true
+    Cell Size: 0.5
+  - Class: rviz_default_plugins/RobotModel
+    Name: RobotModel
+    Enabled: true
+    Description Topic:
+      Value: /robot_description
+  - Class: rviz_default_plugins/TF
+    Name: TF
+    Enabled: false
+  - Class: rviz_default_plugins/Odometry
+    Name: Odometry
+    Enabled: true
+    Topic:
+      Value: /odom
+  - Class: rviz_default_plugins/LaserScan
+    Name: LiDAR
+    Enabled: true
+    Topic:
+      Value: /scan
+      Reliability Policy: Best Effort
+      Durability Policy: Volatile
+      History Policy: Keep Last
+      Depth: 5
+    Size (m): 0.035
+    Style: Points
+    Color Transformer: FlatColor
+    Color: 0; 180; 255
+    Decay Time: 0
+  - Class: rviz_default_plugins/LaserScan
+    Name: Ultrassom frontal
+    Enabled: true
+    Topic:
+      Value: /ultrasonic/front/scan
+      Reliability Policy: Best Effort
+      Durability Policy: Volatile
+      History Policy: Keep Last
+      Depth: 5
+    Size (m): 0.035
+    Style: Points
+    Color Transformer: FlatColor
+    Color: 255; 80; 50
+    Decay Time: 0
+  - Class: rviz_default_plugins/LaserScan
+    Name: Ultrassom esquerdo
+    Enabled: true
+    Topic:
+      Value: /ultrasonic/left/scan
+      Reliability Policy: Best Effort
+      Durability Policy: Volatile
+      History Policy: Keep Last
+      Depth: 5
+    Size (m): 0.035
+    Style: Points
+    Color Transformer: FlatColor
+    Color: 50; 220; 60
+    Decay Time: 0
+  - Class: rviz_default_plugins/LaserScan
+    Name: Ultrassom direito
+    Enabled: true
+    Topic:
+      Value: /ultrasonic/right/scan
+      Reliability Policy: Best Effort
+      Durability Policy: Volatile
+      History Policy: Keep Last
+      Depth: 5
+    Size (m): 0.035
+    Style: Points
+    Color Transformer: FlatColor
+    Color: 230; 100; 255
+    Decay Time: 0
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 6.0
+      Pitch: 0.55
+      Yaw: 0.75
+      Focal Point:
+        X: 0.0
+        Y: 0.0
+        Z: 0.05
+  Tools:
+  - Class: rviz_default_plugins/Interact
+  - Class: rviz_default_plugins/MoveCamera
+  - Class: rviz_default_plugins/SetGoal
+    Topic: /goal_pose
+Window Geometry:
+  Width: 1200
+  Height: 800
+  Hide Left Dock: false
+  Hide Right Dock: false

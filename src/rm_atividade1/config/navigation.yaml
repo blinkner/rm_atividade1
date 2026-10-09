@@ -1,0 +1,13 @@
+navigator:
+  ros__parameters:
+    autostart: True
+    goal_x: 3.0
+    goal_y: 0.0
+    max_speed: 0.15
+    max_turn: 0.65
+    goal_tolerance: 0.12
+    inflation_radius: 0.30
+    lookahead: 0.85
+    data_timeout: 0.6
+    progress_timeout: 40.0
+    lidar_offset_x: 0.008059205

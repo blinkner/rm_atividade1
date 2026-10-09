@@ -1,0 +1,4 @@
+[INFO] [1788833321.098740555] [navigator]: AGUARDANDO_OBJETIVO
+[INFO] [1788833322.488050148] [navigator]: INDO_AO_PONTO
+[INFO] [1788833323.088062794] [navigator]: SEM_DADOS_ATUAIS
+PASS: command_gate para por timeout; navigator para por sensores/odom antigos.

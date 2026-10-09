@@ -1,0 +1,460 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="rm_bot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <link name="base_footprint" />
+  <link name="base_link">
+    <inertial>
+      <origin xyz="0.042205 0 0" rpy="0 0 0" />
+      <mass value="1.5" />
+      <inertia ixx="0.002817" iyy="0.0066170000000000005" izz="0.009425" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+  </link>
+  <joint name="base_joint" type="fixed">
+    <parent link="base_footprint" />
+    <child link="base_link" />
+    <origin xyz="0.000000000 0.000000000 0.048611063" rpy="0 0 0" />
+  </joint>
+  <link name="cad_part_0">
+    <visual>
+      <geometry>
+        <mesh filename="package://rm_bot_description/meshes/part_00.stl" />
+      </geometry>
+      <material name="mat_0">
+        <color rgba="0.63 0.43 0.22 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="fixed_cad_part_0" type="fixed">
+    <parent link="base_link" />
+    <child link="cad_part_0" />
+    <origin xyz="0.000000000 0.000000000 0.000000000" rpy="0 0 0" />
+  </joint>
+  <link name="cad_part_1">
+    <visual>
+      <geometry>
+        <mesh filename="package://rm_bot_description/meshes/part_01.stl" />
+      </geometry>
+      <material name="mat_1">
+        <color rgba="0.08 0.28 0.6 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="fixed_cad_part_1" type="fixed">
+    <parent link="base_link" />
+    <child link="cad_part_1" />
+    <origin xyz="0.000000000 0.000000000 0.000000000" rpy="0 0 0" />
+  </joint>
+  <link name="cad_part_2">
+    <visual>
+      <geometry>
+        <mesh filename="package://rm_bot_description/meshes/part_02.stl" />
+      </geometry>
+      <material name="mat_2">
+        <color rgba="0.63 0.43 0.22 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="fixed_cad_part_2" type="fixed">
+    <parent link="base_link" />
+    <child link="cad_part_2" />
+    <origin xyz="0.000000000 0.000000000 0.000000000" rpy="0 0 0" />
+  </joint>
+  <link name="cad_part_3">
+    <visual>
+      <geometry>
+        <mesh filename="package://rm_bot_description/meshes/part_03.stl" />
+      </geometry>
+      <material name="mat_3">
+        <color rgba="0.62 0.64 0.68 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.083804958 -0.060250002 -0.023000001" />
+      <geometry>
+        <sphere radius="0.02" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_cad_part_3" type="fixed">
+    <parent link="base_link" />
+    <child link="cad_part_3" />
+    <origin xyz="0 0 -0.005611062" rpy="0 0 0" />
+  </joint>
+  <gazebo reference="cad_part_3">
+    <mu1>0.01</mu1>
+    <mu2>0.01</mu2>
+  </gazebo>
+  <link name="cad_part_4">
+    <visual>
+      <geometry>
+        <mesh filename="package://rm_bot_description/meshes/part_04.stl" />
+      </geometry>
+      <material name="mat_4">
+        <color rgba="0.08 0.28 0.6 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="fixed_cad_part_4" type="fixed">
+    <parent link="base_link" />
+    <child link="cad_part_4" />
+    <origin xyz="0.000000000 0.000000000 0.000000000" rpy="0 0 0" />
+  </joint>
+  <link name="cad_part_5">
+    <visual>
+      <geometry>
+        <mesh filename="package://rm_bot_description/meshes/part_05.stl" />
+      </geometry>
+      <material name="mat_5">
+        <color rgba="0.63 0.43 0.22 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="fixed_cad_part_5" type="fixed">
+    <parent link="base_link" />
+    <child link="cad_part_5" />
+    <origin xyz="0.000000000 0.000000000 0.000000000" rpy="0 0 0" />
+  </joint>
+  <link name="cad_part_6">
+    <visual>
+      <geometry>
+        <mesh filename="package://rm_bot_description/meshes/part_06.stl" />
+      </geometry>
+      <material name="mat_6">
+        <color rgba="0.63 0.43 0.22 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.002204980 -0.000000001 0.066000000" />
+      <geometry>
+        <box size="0.149999999 0.100000001 0.005999997" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_cad_part_6" type="fixed">
+    <parent link="base_link" />
+    <child link="cad_part_6" />
+    <origin xyz="0.000000000 0.000000000 0.000000000" rpy="0 0 0" />
+  </joint>
+  <link name="cad_part_7">
+    <visual>
+      <geometry>
+        <mesh filename="package://rm_bot_description/meshes/part_07.stl" />
+      </geometry>
+      <material name="mat_7">
+        <color rgba="0.62 0.64 0.68 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.083805002 0.060250000 -0.023000001" />
+      <geometry>
+        <sphere radius="0.02" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_cad_part_7" type="fixed">
+    <parent link="base_link" />
+    <child link="cad_part_7" />
+    <origin xyz="0 0 -0.005611062" rpy="0 0 0" />
+  </joint>
+  <gazebo reference="cad_part_7">
+    <mu1>0.01</mu1>
+    <mu2>0.01</mu2>
+  </gazebo>
+  <link name="cad_part_8">
+    <visual>
+      <geometry>
+        <mesh filename="package://rm_bot_description/meshes/part_08.stl" />
+      </geometry>
+      <material name="mat_8">
+        <color rgba="0.62 0.64 0.68 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="fixed_cad_part_8" type="fixed">
+    <parent link="base_link" />
+    <child link="cad_part_8" />
+    <origin xyz="0.000000000 0.000000000 0.000000000" rpy="0 0 0" />
+  </joint>
+  <link name="left_wheel_link">
+    <visual>
+      <geometry>
+        <mesh filename="package://rm_bot_description/meshes/part_09.stl" />
+      </geometry>
+      <material name="mat_9">
+        <color rgba="0.16 0.17 0.19 1" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder radius="0.03446087334305048" length="0.025" />
+      </geometry>
+      <origin rpy="1.57079632679 0 0" />
+    </collision>
+    <inertial>
+      <mass value="0.12" />
+      <inertia ixx="5.3752071662630694e-05" iyy="9.500414332526137e-05" izz="5.3752071662630694e-05" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+  </link>
+  <joint name="left_wheel_joint" type="continuous">
+    <parent link="base_link" />
+    <child link="left_wheel_link" />
+    <origin xyz="0.000250001 0.091800000 -0.014149810" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+    <limit effort="5" velocity="30" />
+  </joint>
+  <link name="cad_part_10">
+    <visual>
+      <geometry>
+        <mesh filename="package://rm_bot_description/meshes/part_10.stl" />
+      </geometry>
+      <material name="mat_10">
+        <color rgba="0.63 0.43 0.22 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="fixed_cad_part_10" type="fixed">
+    <parent link="base_link" />
+    <child link="cad_part_10" />
+    <origin xyz="0.000000000 0.000000000 0.000000000" rpy="0 0 0" />
+  </joint>
+  <link name="right_wheel_link">
+    <visual>
+      <geometry>
+        <mesh filename="package://rm_bot_description/meshes/part_11.stl" />
+      </geometry>
+      <material name="mat_11">
+        <color rgba="0.16 0.17 0.19 1" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder radius="0.034460874274373055" length="0.025" />
+      </geometry>
+      <origin rpy="1.57079632679 0 0" />
+    </collision>
+    <inertial>
+      <mass value="0.12" />
+      <inertia ixx="5.375207423016587e-05" iyy="9.500414846033173e-05" izz="5.375207423016587e-05" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+  </link>
+  <joint name="right_wheel_joint" type="continuous">
+    <parent link="base_link" />
+    <child link="right_wheel_link" />
+    <origin xyz="-0.000249999 -0.091800001 -0.014150189" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+    <limit effort="5" velocity="30" />
+  </joint>
+  <link name="cad_part_12">
+    <visual>
+      <geometry>
+        <mesh filename="package://rm_bot_description/meshes/part_12.stl" />
+      </geometry>
+      <material name="mat_12">
+        <color rgba="0.62 0.64 0.68 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="fixed_cad_part_12" type="fixed">
+    <parent link="base_link" />
+    <child link="cad_part_12" />
+    <origin xyz="0.000000000 0.000000000 0.000000000" rpy="0 0 0" />
+  </joint>
+  <link name="cad_part_13">
+    <visual>
+      <geometry>
+        <mesh filename="package://rm_bot_description/meshes/part_13.stl" />
+      </geometry>
+      <material name="mat_13">
+        <color rgba="0.63 0.43 0.22 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.042204979 -0.000000001 0.000000000" />
+      <geometry>
+        <box size="0.229999997 0.149999999 0.006000000" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_cad_part_13" type="fixed">
+    <parent link="base_link" />
+    <child link="cad_part_13" />
+    <origin xyz="0.000000000 0.000000000 0.000000000" rpy="0 0 0" />
+  </joint>
+  <link name="cad_part_14">
+    <visual>
+      <geometry>
+        <mesh filename="package://rm_bot_description/meshes/part_14.stl" />
+      </geometry>
+      <material name="mat_14">
+        <color rgba="0.08 0.28 0.6 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="fixed_cad_part_14" type="fixed">
+    <parent link="base_link" />
+    <child link="cad_part_14" />
+    <origin xyz="0.000000000 0.000000000 0.000000000" rpy="0 0 0" />
+  </joint>
+  <link name="cad_part_15">
+    <visual>
+      <geometry>
+        <mesh filename="package://rm_bot_description/meshes/part_15.stl" />
+      </geometry>
+      <material name="mat_15">
+        <color rgba="0.63 0.43 0.22 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="fixed_cad_part_15" type="fixed">
+    <parent link="base_link" />
+    <child link="cad_part_15" />
+    <origin xyz="0.000000000 0.000000000 0.000000000" rpy="0 0 0" />
+  </joint>
+  <link name="cad_part_16">
+    <visual>
+      <geometry>
+        <mesh filename="package://rm_bot_description/meshes/part_16.stl" />
+      </geometry>
+      <material name="mat_16">
+        <color rgba="0.16 0.17 0.19 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.008059205 -0.000000001 0.095750000" />
+      <geometry>
+        <box size="0.097488452 0.071736403 0.053500004" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fixed_cad_part_16" type="fixed">
+    <parent link="base_link" />
+    <child link="cad_part_16" />
+    <origin xyz="0.000000000 0.000000000 0.000000000" rpy="0 0 0" />
+  </joint>
+  <link name="ultrasonic_front_link" />
+  <joint name="ultrasonic_front_joint" type="fixed">
+    <parent link="base_link" />
+    <child link="ultrasonic_front_link" />
+    <origin xyz="0.157284980 0.000000000 0.020300000" rpy="0 0 0" />
+  </joint>
+  <link name="ultrasonic_right_link" />
+  <joint name="ultrasonic_right_joint" type="fixed">
+    <parent link="base_link" />
+    <child link="ultrasonic_right_link" />
+    <origin xyz="0.140994100 -0.058789120 0.020300000" rpy="0 0 -0.7853981633974483" />
+  </joint>
+  <link name="ultrasonic_left_link" />
+  <joint name="ultrasonic_left_joint" type="fixed">
+    <parent link="base_link" />
+    <child link="ultrasonic_left_link" />
+    <origin xyz="0.140994100 0.058789120 0.020300000" rpy="0 0 0.7853981633974483" />
+  </joint>
+  <link name="lidar_link" />
+  <joint name="lidar_joint" type="fixed">
+    <parent link="base_link" />
+    <child link="lidar_link" />
+    <origin xyz="0.008059206 0.000000000 0.112500000" rpy="0 0 0" />
+  </joint>
+  <xacro:property name="wheel_radius" value="0.034460874274373055" />
+  <xacro:property name="wheel_separation" value="0.18360000000033586" />
+  <xacro:include filename="$(find rm_bot_description)/urdf/rm_bot.gazebo.xacro" />
+  <gazebo reference="lidar_link">
+    <sensor name="lidar" type="gpu_lidar">
+      <topic>/scan</topic>
+      <gz_frame_id>lidar_link</gz_frame_id>
+      <update_rate>10</update_rate>
+      <always_on>true</always_on>
+      <lidar>
+        <scan>
+          <horizontal>
+            <samples>720</samples>
+            <resolution>1</resolution>
+            <min_angle>-3.141592653589793</min_angle>
+            <max_angle>3.141592653589793</max_angle>
+          </horizontal>
+        </scan>
+        <range>
+          <min>.12</min>
+          <max>12</max>
+          <resolution>.01</resolution>
+        </range>
+      </lidar>
+    </sensor>
+  </gazebo>
+  <gazebo reference="ultrasonic_front_link">
+    <sensor name="front" type="gpu_lidar">
+      <topic>/ultrasonic/front/scan</topic>
+      <gz_frame_id>ultrasonic_front_link</gz_frame_id>
+      <update_rate>10</update_rate>
+      <always_on>true</always_on>
+      <lidar>
+        <scan>
+          <horizontal>
+            <samples>9</samples>
+            <resolution>1</resolution>
+            <min_angle>-0.34906585</min_angle>
+            <max_angle>0.34906585</max_angle>
+          </horizontal>
+        </scan>
+        <range>
+          <min>.02</min>
+          <max>4</max>
+          <resolution>.01</resolution>
+        </range>
+      </lidar>
+    </sensor>
+  </gazebo>
+  <gazebo reference="ultrasonic_right_link">
+    <sensor name="right" type="gpu_lidar">
+      <topic>/ultrasonic/right/scan</topic>
+      <gz_frame_id>ultrasonic_right_link</gz_frame_id>
+      <update_rate>10</update_rate>
+      <always_on>true</always_on>
+      <lidar>
+        <scan>
+          <horizontal>
+            <samples>9</samples>
+            <resolution>1</resolution>
+            <min_angle>-1.570796327</min_angle>
+            <max_angle>-0.34906585</max_angle>
+          </horizontal>
+        </scan>
+        <range>
+          <min>.02</min>
+          <max>4</max>
+          <resolution>.01</resolution>
+        </range>
+      </lidar>
+    </sensor>
+  </gazebo>
+  <gazebo reference="ultrasonic_left_link">
+    <sensor name="left" type="gpu_lidar">
+      <topic>/ultrasonic/left/scan</topic>
+      <gz_frame_id>ultrasonic_left_link</gz_frame_id>
+      <update_rate>10</update_rate>
+      <always_on>true</always_on>
+      <lidar>
+        <scan>
+          <horizontal>
+            <samples>9</samples>
+            <resolution>1</resolution>
+            <min_angle>0.34906585</min_angle>
+            <max_angle>1.570796327</max_angle>
+          </horizontal>
+        </scan>
+        <range>
+          <min>.02</min>
+          <max>4</max>
+          <resolution>.01</resolution>
+        </range>
+      </lidar>
+    </sensor>
+  </gazebo>
+<link name="caster_spacer_3">
+ <visual><origin xyz="0.083805 -0.06025 -0.005805531"/><geometry><box size="0.038 0.032 0.005611062"/></geometry><material name="spacer_gray"><color rgba="0.45 0.45 0.48 1"/></material></visual>
+ <collision><origin xyz="0.083805 -0.06025 -0.005805531"/><geometry><box size="0.038 0.032 0.005611062"/></geometry></collision>
+</link><joint name="caster_spacer_joint_3" type="fixed"><parent link="base_link"/><child link="caster_spacer_3"/></joint>
+<link name="caster_spacer_7">
+ <visual><origin xyz="0.083805 0.06025 -0.005805531"/><geometry><box size="0.038 0.032 0.005611062"/></geometry><material name="spacer_gray"><color rgba="0.45 0.45 0.48 1"/></material></visual>
+ <collision><origin xyz="0.083805 0.06025 -0.005805531"/><geometry><box size="0.038 0.032 0.005611062"/></geometry></collision>
+</link><joint name="caster_spacer_joint_7" type="fixed"><parent link="base_link"/><child link="caster_spacer_7"/></joint>
+</robot>
